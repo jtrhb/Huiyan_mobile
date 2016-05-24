@@ -4,6 +4,7 @@ session_start();
 require("lib.php");
 require("api.php");
 header("Content-Type: application/json");
+select_news();
 switch ($_POST['command']) {	
 	case "select":
 	    select($_POST['patient_name']);
